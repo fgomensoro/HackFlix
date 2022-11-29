@@ -22,7 +22,7 @@ const Navbar = () => {
           <h1 className="logoTitleB"> F </h1>
           <h1 className="logoTitleC"> lix </h1>
         </Link>
-        <div className="row">
+        <div className="row searchBar">
           <div className="search"></div>
           <div className="col mx-5">
             <div className="btn-group dropstart">
@@ -37,7 +37,10 @@ const Navbar = () => {
 
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item dropItemNav font2" to="/search">
+                  <Link
+                    className="dropdown-item dropItemNav font2"
+                    to="/search"
+                  >
                     Search by Rating
                   </Link>
                 </li>
@@ -54,50 +57,57 @@ const Navbar = () => {
         {/* TOGGLER NAVBAR */}
 
         <div
-          className="offcanvas offcanvas-start text-bg-dark"
+          className="offcanvas offcanvas-start text-bg-dark canvas"
           tabIndex="-1"
           id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
-        <div className="menuBar">
-          <div className="offcanvas-header red">
-            <h5 className="offcanvas-title font3" id="offcanvasDarkNavbarLabel">
-              MENU
-            </h5>
-          </div>
-          <div className="offcanvas-body">
-            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li className="nav-item">
-                <Link
-                  className="nav-link active white font2"
-                  aria-current="page"
-                  to="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item nav-item-contact">
-                <Link className="nav-link white mt-3 align font2" to="/search_by_name">
-                  Search by Movie
-                </Link>
-              </li>
-              <li className="nav-item nav-item-contact">
-                <Link className="nav-link white mt-3 align font2" to="/search">
-                  Search by Rating
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link white mt-3 align2 font2" to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item nav-item-contact">
-                <Link className="nav-link white mt-3 align3 font2" to="/contact">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-</div>
+          <div className="menuBar">
+            <div className="offcanvas-header red">
+              <h5
+                className="offcanvas-title font3"
+                id="offcanvasDarkNavbarLabel"
+              >
+                MENU
+              </h5>
+            </div>
+            <div className="offcanvas-body">
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active white font2"
+                    aria-current="page"
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item nav-item-contact">
+                  <Link
+                    className="nav-link white mt-3 align font2"
+                    to="/search_by_name"
+                  >
+                    Search by Movie
+                  </Link>
+                </li>
+                <li className="nav-item nav-item-contact">
+                  <Link
+                    className="nav-link white mt-3 align font2"
+                    to="/search"
+                  >
+                    Search by Rating
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link white mt-3 align2 font2"
+                    to="/about"
+                  >
+                    About
+                  </Link>
+                </li>
+              </ul>
+            </div>
             <div className="white logo logo2">
               <FaCaretSquareRight className="logoIcon" />
               <h1 className="logoTitleA"> Hack </h1>

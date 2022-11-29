@@ -11,7 +11,7 @@ const OneMovie = ({ movie }) => {
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0 }}
         layout
         className="movieContainer m-3"
         style={{

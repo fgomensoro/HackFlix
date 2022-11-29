@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
 import SearchPageName from "./pages/SearchPageName";
 import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
+
 import MoviePage from "./pages/MoviePage";
 
 function App() {
@@ -19,8 +19,7 @@ function App() {
         <Route path="/movie/:id" element={<MoviePage />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/search_by_name" element={<SearchPageName />} />
-        {/* <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} /> */}
+        <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

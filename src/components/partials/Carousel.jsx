@@ -29,9 +29,7 @@ const HeroCarousel = () => {
     getMovies();
   }, []);
 
-  console.log(trendingMovies);
-
-  // trendingMovies.filter((movie, index) => index < 5).map();
+  
 
   return (
     trendingMovies && (
@@ -67,7 +65,7 @@ const HeroCarousel = () => {
             ></button>
             <button
               type="button"
-              className="carouselBtn"
+              className="carouselBtn carBtn3"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="2"
               aria-label="Slide 3"
@@ -78,7 +76,7 @@ const HeroCarousel = () => {
             ></button>
             <button
               type="button"
-              className="carouselBtn"
+              className="carouselBtn carBtn4"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="3"
               aria-label="Slide 4"
@@ -89,7 +87,7 @@ const HeroCarousel = () => {
             ></button>
             <button
               type="button"
-              className="carouselBtn"
+              className="carouselBtn carBtn5"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="4"
               aria-label="Slide 5"
@@ -107,7 +105,7 @@ const HeroCarousel = () => {
                 }}
                 className="d-block w-100 carouselImg"
               ></div>
-              <div className="carousel-caption d-none d-md-block carouselCaptions">
+              <div className="carousel-caption d-md-block carouselCaptions">
                 <h5 className="font3">{trendingMovies[0].title}</h5>
                 <p className="font1">{trendingMovies[0].overview}</p>
               </div>
@@ -119,43 +117,43 @@ const HeroCarousel = () => {
                 }}
                 className="d-block w-100 carouselImg"
               ></div>
-              <div className="carousel-caption d-none d-md-block carouselCaptions">
+              <div className="carousel-caption  d-md-block carouselCaptions">
                 <h5 className="font3">{trendingMovies[1].title}</h5>
                 <p className="font1">{trendingMovies[1].overview}</p>
               </div>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item carBtn3">
               <div
                 style={{
                   backgroundImage: `url(https://image.tmdb.org/t/p/w1280${trendingMovies[2].backdrop_path})`,
                 }}
                 className="d-block w-100 carouselImg"
               ></div>
-              <div className="carousel-caption d-none d-md-block carouselCaptions">
+              <div className="carousel-caption  d-md-block carouselCaptions">
                 <h5 className="font3">{trendingMovies[2].title}</h5>
                 <p className="font1">{trendingMovies[2].overview}</p>
               </div>
             </div>
-            <div className=" carousel-item">
+            <div className=" carousel-item carBtn4">
               <div
                 style={{
                   backgroundImage: `url(https://image.tmdb.org/t/p/w1280${trendingMovies[3].backdrop_path})`,
                 }}
                 className="d-block w-100 carouselImg"
               ></div>
-              <div className="carousel-caption d-none d-md-block carouselCaptions">
+              <div className="carousel-caption  d-md-block carouselCaptions">
                 <h5 className="font3">{trendingMovies[3].title}</h5>
                 <p className="font1">{trendingMovies[3].overview}</p>
               </div>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item carBtn5">
               <div
                 style={{
                   backgroundImage: `url(https://image.tmdb.org/t/p/w1280${trendingMovies[4].backdrop_path})`,
                 }}
                 className="d-block w-100 carouselImg"
               ></div>
-              <div className="carousel-caption d-none d-md-block carouselCaptions ">
+              <div className="carousel-caption  d-md-block carouselCaptions ">
                 <h5 className="font3">{trendingMovies[4].title}</h5>
                 <p className="font1">{trendingMovies[4].overview}</p>
               </div>

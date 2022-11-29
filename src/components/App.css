@@ -139,11 +139,32 @@
 }
 
 .genreContainer {
-  width: 85%;
+  width: 65%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (max-width: 1210px) {
+  .genreContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 790px) {
+  .filterContainer button {
+    font-size: 12px !important ;
+    padding: 0.1px 1px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchBar {
+    display: none !important;
+  }
+  .logo {
+    margin: auto;
+  }
 }
 
 .allBtn {
@@ -154,23 +175,23 @@
   font-weight: 900 !important;
   border: 3px solid #d21d27 !important;
   font-size: 20px;
-  margin-top: 4rem !important;
-  margin-bottom: 1rem !important;
+  margin-top: 3rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .filterContainer button {
   margin-right: 2rem;
   min-width: 5rem;
-  padding: 0.2rem 0.7rem;
+  padding: 1px 5px;
   border: none;
   background: #d21d2628;
   color: #d21d27;
   border-radius: 1rem;
   border: 2px solid #d21d27;
-  font-weight: bold;
   cursor: pointer;
-  margin-top: 2rem;
-  font-weight: 600;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .filterContainer button.active {
@@ -440,4 +461,47 @@
   text-align: left;
   padding-left: 2% !important;
   padding-bottom: 0.5rem !important;
+}
+
+@media (max-width: 900px) {
+  .carBtn5 {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .carBtn4 {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .carBtn3 {
+    display: none;
+  }
+}
+
+.colAbout {
+  height: 67vh;
+  font-family: "Roboto Flex", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  margin-top: 12rem !important;
+  margin-bottom: 5rem;
+  text-align: left;
+  padding: 0rem 3rem !important;
+}
+
+.githubLink {
+  text-decoration: underline;
+  color: #191b1d;
+  text-shadow: 0.8px 0.8px 1px #191b1d;
+}
+
+.githubLink:hover {
+  text-decoration: none;
+  color: #191b1d;
+  opacity: 60%;
+}
+
+.colAb1 {
+  font-weight: 600 !important;
 }
