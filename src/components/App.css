@@ -138,6 +138,46 @@
   opacity: 80%;
 }
 
+.genreContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.allBtn {
+  padding: 0.3rem 0.8rem !important;
+  background: #d21d266a !important;
+  color: #d21d27 !important;
+  border-radius: 2rem !important;
+  font-weight: 900 !important;
+  border: 3px solid #d21d27 !important;
+  font-size: 20px;
+  margin-top: 4rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.filterContainer button {
+  margin-right: 2rem;
+  min-width: 5rem;
+  padding: 0.2rem 0.7rem;
+  border: none;
+  background: #d21d2628;
+  color: #d21d27;
+  border-radius: 1rem;
+  border: 2px solid #d21d27;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.filterContainer button.active {
+  background: #d21d27 !important;
+  color: white !important;
+}
+
 .searchSize {
   font-size: 1.3rem;
 }
@@ -246,6 +286,7 @@
   padding: 3.9rem 0rem !important;
   border-radius: 25px;
   margin-right: 2rem !important;
+  opacity: 95% !important;
 }
 
 .carousel-indicators {

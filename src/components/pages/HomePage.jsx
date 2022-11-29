@@ -7,6 +7,8 @@ const HomePage = () => {
   const [movies, setMovies] = useState(null);
   const [rating, setRating] = useState(0);
   const [page, setPage] = useState(random);
+  const [filtered, setFiltered] = useState([]);
+  
 
   const axiosConfig = {
     url: "https://api.themoviedb.org/3/discover/movie?",
@@ -28,6 +30,7 @@ const HomePage = () => {
       const response = await axios(axiosConfig);
       const data = [...response.data.results];
       setMovies(data);
+      setFiltered(data);
     };
     getMovies();
   }, [rating]);
@@ -37,6 +40,7 @@ const HomePage = () => {
       const response = await axios(axiosConfig);
       const data = [...response.data.results];
       setMovies([...movies, ...data]);
+      setFiltered([...filtered, ...data]);
     };
     page > 1 && getMovies();
   }, [page]);
@@ -48,6 +52,8 @@ const HomePage = () => {
         setRating={setRating}
         setPage={setPage}
         movies={movies}
+        filtered={filtered}
+        setFiltered={setFiltered}
       />
     </>
   );

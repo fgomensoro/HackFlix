@@ -1,4 +1,4 @@
-export default Genres = [
+const Genres = [
   {
     genre: "Action",
     id: 28,
@@ -76,3 +76,5 @@ export default Genres = [
     id: 37,
   },
 ];
+
+export default Genres;
